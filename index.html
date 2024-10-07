@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <img src="./src/images/bgralph.png" alt="foto detona ralph" srcset="">
+        <div class="container">
+            <h1>Bem-vindo ao Jogo!</h1>
+            <h2>Press Start</h2>
+            <button id="start-button">Start</button>
+        </div>
+    </main>
+
+    <script>
+       document.getElementById('start-button').addEventListener('click', () => {
+    playBackgroundSound(); // Toca a música quando o botão é clicado
+    window.location.href = 'game.html'; // Redireciona para a página do jogo
+});
+    
+        let bgSound = new Audio('./src/sounds/inits.m4a');
+        bgSound.volume = 0.5;
+    
+        // Tocar som de hit
+        const playBackgroundSound = () => {
+            bgSound.loop = true; // Faz o som de fundo tocar em loop
+            bgSound.play(); // Toca o som de fundo
+        };
+    
+       
+    
+        // Chame a função init quando a página carregar
+        window.onload = playBackgroundSound; // Inicializa a música quando a página for carregada
+    </script>
+    
+</body>
+
+</html>

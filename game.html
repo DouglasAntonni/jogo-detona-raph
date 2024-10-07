@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <div class="menu">
+            <div class="menu-time">
+                <h2 style="color: red;">Time left</h2>
+                <h2 id="time-left">60</h2>
+            </div>
+            <div class="menu-score">
+                <h2 style="color: red;">Your Score</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="menu-lives">
+                <img src="./src/images/player.png" alt="foto do jogador" height="40px">
+                <h2>X3</h2>
+            </div>
+            <button id="pause-btn">Pausar</button>
+        </div>
+        <div class="panel" id="panel">
+            
+        </div>
+    </main>
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>

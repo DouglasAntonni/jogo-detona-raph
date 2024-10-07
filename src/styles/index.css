@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Fonte estilizada */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    height: 100vh; /* Faz o main ocupar a altura total da viewport */
+    background: url('./src/images/bgralph.png') no-repeat center center; /* Define a imagem como fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    position: relative; /* Para controle de posicionamento */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra interna */
+    border-radius: 10px; /* Arredonda os cantos */
+}
+
+
+.container {
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Define a cor do texto */
+    position: relative; /* Para controle de posicionamento */
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px); /* Adiciona um efeito de desfoque ao fundo */
+    padding: 20px; /* Espaçamento interno da container */
+    border-radius: 10px; /* Arredonda os cantos */
+}
+
+h1 {
+    margin-top: 20px; /* Espaçamento acima do título */
+    font-size: 2.5rem; /* Tamanho do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto */
+}
+
+button {
+    background-color: #61dafb;
+    margin-top: 10px; /* Espaçamento acima do botão */
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    border: none;
+    border-radius: 8px; /* Arredonda os cantos do botão */
+    transition: background-color 0.3s ease, transform 0.2s; /* Efeitos de transição */
+}
+
+button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
