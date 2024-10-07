@@ -8,6 +8,7 @@ body {
     color: white;
     text-align: center;
     font-family: 'Press Start 2P', cursive; /* Fonte estilizada */
+    overflow: hidden;
 }
 
 main {
@@ -21,8 +22,8 @@ main {
     position: relative; /* Para controle de posicionamento */
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra interna */
     border-radius: 10px; /* Arredonda os cantos */
+    padding: 20px; /* Adiciona espaçamento interno */
 }
-
 
 .container {
     text-align: center; /* Centraliza o texto */
@@ -55,4 +56,39 @@ button {
 button:hover {
     background-color: #21a1f1;
     transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho do título menor para telas pequenas */
+    }
+
+    button {
+        padding: 12px 24px; /* Ajusta o espaçamento interno do botão */
+        font-size: 16px; /* Tamanho da fonte do botão menor */
+    }
+
+    main {
+        padding: 10px; /* Reduz o padding no main */
+    }
+
+    .container {
+        padding: 15px; /* Reduz o padding na container */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Tamanho do título ainda menor para telas muito pequenas */
+    }
+
+    button {
+        padding: 10px 20px; /* Ajusta o espaçamento interno do botão ainda mais */
+        font-size: 14px; /* Tamanho da fonte do botão menor */
+    }
+
+    .container {
+        padding: 10px; /* Reduz o padding na container */
+    }
 }
